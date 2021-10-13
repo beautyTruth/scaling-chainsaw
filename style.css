@@ -32,6 +32,7 @@ html {
   background-color: var(--secondary-color);
   margin: 3.5rem;
   box-shadow: 0 1rem 3rem var(--grey-color);
+  overflow: hidden;
 }
 
 .header {
@@ -44,13 +45,23 @@ html {
     url(images/bg-2.jpg) center no-repeat;
   background-size: cover;
   position: relative;
+  perspective: 100rem;
 }
 
 .header-text {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  color: var(--grey-color);
   text-shadow: 0 0.3rem 0.5rem var(--grey-color);
+}
+
+.funyuns {
+  color: rgb(0, 56, 0);
+  text-shadow: 0 0.1rem 0.2rem yellow;
+  font-weight: 900;
+  letter-spacing: 0.7rem;
+  font-size: 3.5rem;
 }
 
 .heading {
@@ -60,7 +71,8 @@ html {
 .header-paragraph {
   font-size: 3rem;
   font-weight: 500;
-  color: var(--secondary-color);
+  color: var(--grey-color);
+  text-shadow: 0 0.1rem 0.2rem var(--light-grey-color);
   max-width: 70rem;
   margin: auto;
 }
@@ -137,5 +149,33 @@ html {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.header-image {
+  width: 35%;
+  animation: image-float 150s infinite;
+}
+
+@keyframes image-float {
+  0% {
+    transform: translateZ(40rem) rotate(-15deg);
+    opacity: 1;
+  }
+  40% {
+    transform: translateZ(-500rem) translateX(150rem);
+    opacity: 0.8;
+  }
+  70% {
+    transform: translateZ(-1500rem) translateX(800rem) rotate(15deg);
+    opacity: 0.6;
+  }
+  80% {
+    transform: translateZ(-50rem) translateX(100rem);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateZ(40rem) rotate(-15deg);
+    opacity: 1;
   }
 }
