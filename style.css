@@ -394,6 +394,7 @@ html {
   text-align: center;
   background: url(images/contact-us-bg.png) center no-repeat;
   background-size: cover;
+  animation: contact-mama 35s infinite;
 }
 
 .contact-heading {
@@ -485,6 +486,24 @@ html {
 .input-group textarea {
   max-height: 15rem;
   max-width: 100%;
+}
+
+@keyframes contact-mama {
+  0% {
+    background-color: cornflowerblue;
+  }
+  25% {
+    background-color: cornsilk;
+  }
+  50% {
+    background-color: crimson;
+  }
+  75% {
+    background-color: darksalmon;
+  }
+  100% {
+    background-color: cornflowerblue;
+  }
 }
 
 /* end of contact section */
