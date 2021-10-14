@@ -5,3 +5,7 @@ Array.from(document.querySelectorAll(".navigation-button")).forEach(
     };
   }
 );
+
+const oldeYear = document.querySelector(".year");
+const newYear = new Date().getFullYear();
+oldeYear.textContent = newYear;
