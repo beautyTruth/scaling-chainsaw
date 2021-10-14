@@ -225,10 +225,11 @@ html {
   position: relative;
   z-index: 10;
   opacity: 0.9;
+  transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
 }
 
 .change > .front-side {
-  transform: translateX(-5rem) translateX(3rem);
+  transform: translateZ(-5rem) translateX(3rem);
   box-shadow: 0 2rem 4rem #777;
   opacity: 0.5;
   z-index: 0;
@@ -271,10 +272,11 @@ html {
   flex-direction: column;
   transform: translateZ(-5rem) translateX(3rem);
   opacity: 0.5;
+  transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
 }
 
 .change > .back-side {
-  transform: translateX(0) translateX(0);
+  transform: translateZ(0) translateX(0);
   box-shadow: 0 0.5rem 2rem #aaa;
   opacity: 0.9;
 }
